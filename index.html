@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Mascota</title>
+    <link rel="stylesheet" href="/stylesGlobales.css">
+    <link rel="stylesheet" href="/styles.index.css">
     <link rel="icon" type="img/png" href="img/huellaIcono.jpg">
 </head>
 
@@ -24,13 +26,13 @@
 
     <!-- Contenido principal de la página-->
     <main>
-        <section>
-            <section>
+        <section class ="bienvenida">
+            <section class ="carrusel">
                 <h2>Encuentra a tu compañero ideal</h2>
 
-                <div><!-- separa y agrupa elementos-->
+                <div class ="slider"><!-- separa y agrupa elementos-->
                     <!-- para contener todo el carrusel-->
-                    <div>
+                    <div class ="slides">
                         <img src="img/perromarronRectangular.jpg" alt="#">
                         <img src="img/perroconFondoAzulRectangular.jpg" alt="#">
                         <img src="img/gatoconFondoAmarrilloRectangular.jpg" alt="#">
@@ -38,10 +40,10 @@
                         <img src="img/gatoAzulVertical.jpg" alt="#">
                     </div>
                 </div>
-                <button>❮</button>
-                <button>❯</button>
+                <button class ="prev">❮</button>
+                <button class ="next">❯</button>
             </section>
-            <p>En Mundo Mascota creemos que cada mascota es única y merece un hogar lleno de
+            <p style="margin-top: 20px">En Mundo Mascota creemos que cada mascota es única y merece un hogar lleno de
                 amor y cuidados especiales.</p>
             <p> Nuestro equipo de expertos se dedica a brindarte toda la información necesaria para tomar las mejores
                 decisiones en el cuidado y bienestar de tus amigos peludos.</p>
@@ -49,17 +51,17 @@
 
 
         <!-- seccion de mascotas destacadas-->
-        <section>
+        <section class ="destacados">
             <h2>Mascotas Destacadas</h2>
-            <div>
+            <div class ="mascota-destacada">
                 <!-- Tarjeta para Perro Destacado -->
                 <!-- Tarjeta para Perro Destacado -->
-                <div >
-                    <div>
-                        <div>
+                <div class="tarjeta">
+                    <div class ="tarjeta-inner">
+                        <div class ="tarjeta-front">
                             <img src="img/Beto.jpg" alt="Beto">
                         </div>
-                        <div>
+                        <div class ="tarjeta-back">
                             <h3>Beto</h3>
                             <p>Beto es un perro muy tierno y cariñoso.</p>
                         </div>
@@ -67,12 +69,12 @@
                 </div>
 
                 <!-- Tarjeta para Gato Destacado -->
-                <div>
-                    <div>
-                        <div>
+                <div class ="tarjeta">
+                    <div class ="tarjeta-inner">
+                        <div class ="tarjeta-front">
                             <img src="img/miro.jpg" alt="Milu">
                         </div>
-                        <div>
+                        <div class="tarjeta-back">
                             <h3>Milu</h3>
                             <p>Milu es una gatina muy amigable y juguetona.</p>
                         </div>
@@ -81,9 +83,9 @@
             </div>
         </section>
 
+
         <section>
             <div>
-
                 <section>
                     <h2>Perritos en Adopción</h2>
                     <p>Haz clic en el botón para conocer a un perrito en adopción</p>
