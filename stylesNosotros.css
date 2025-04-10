@@ -1,0 +1,171 @@
+/* Estilos generales para las secciones */
+.acerca,
+.historia,
+.equipo,
+.testimonios {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezados estilizados */
+.acerca h2,
+.historia h2,
+.equipo h2,
+.testimonios h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+  color: #ff6f61;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Contenedor de columnas actualizado */
+.col-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Imagenes responsivas y centradas */
+.col-imagen img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.col-imagen img:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para el texto */
+.col-texto p {
+  text-align: justify;
+  line-height: 1.8;
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Sección equipo renovada */
+.equipo .miembros {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.equipo article {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 280px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.equipo article:hover {
+  transform: translateY(-5px);
+}
+
+.equipo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Sección de Testimonios renovada */
+.testimonios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.testimonios blockquote {
+  padding: 15px;
+  border-left: 5px solid #ff6f61;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: left;
+  font-style: italic;
+}
+
+.testimonios footer {
+  margin-top: 10px;
+  text-align: right;
+  font-weight: bold;
+  background-color: transparent;
+  color: #555;
+}
+
+
+#sobre-nosotros-historia {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+#sobre-nosotros-historia .col-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#sobre-nosotros-historia .card {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: justify;
+  transition: transform 0.3s ease;
+}
+
+#sobre-nosotros-historia .card:hover {
+  transform: translateY(-5px);
+}
+
+#sobre-nosotros-historia h3 {
+  text-align: center;
+  color: #ff6f61;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#sobre-nosotros-historia .col-imagen img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+/* Responsividad móvil */
+@media screen and (max-width: 768px) {
+  .col-container {
+    flex-direction: column;
+  }
+
+  .equipo article {
+    width: 100%;
+  }
+}
