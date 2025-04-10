@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Mascota</title>
+    <link rel="stylesheet" href="/stylesGlobales.css">
+    <link rel="stylesheet" href="/adoptaStyles.css">
+    <link rel="icon" type="img/png" href="img/huellaIcono.jpg">
+</head>
+
+<body>
+    <header>
+        <h1>Mundo Mascota</h1>
+
+        <!-- barra de navegación-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="mascotas.html">Mascotas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+
+        <main>
+            <section class="mascotas">
+                <h2>Conoce a Nuestras Adorables Mascotas</h2>
+                <p>¿Buscas amor?</p>
+                <div class="gallery" id="" gallery></div>
+            </section>
+
+            <!-- Modal para mostrar el detalle de la mascota-->
+            <div class="modal" id="modal">
+                <div clas "modal-content">
+                    <span class="close" id="close">&times;</span>
+                    <h3 id="pet-name"></h3>
+                    <p><strong>Edad:</strong> <span></span></p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Mundo Mascota. Todos los derechos reservados.</p>
+        </footer>
+
+        <scrip src="scriptMascotas.js"></scrip>
+
+    </body>
