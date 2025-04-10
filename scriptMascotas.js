@@ -4,7 +4,7 @@ const pets = [
         name: 'Firulais',
         age: '3 años',
         gender: 'Macho',
-        image: 'img/perro1.jpg'
+        image: '#'
     },
     {
         type: 'gato',
